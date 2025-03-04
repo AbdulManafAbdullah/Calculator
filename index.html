@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="Calculator">
+        <div class="calc-menu">
+            <p>Calculator</p>
+            <div class="icons">
+                <i class="fa-solid fa-window-minimize"></i>
+                <i class="fa-regular fa-window-maximize"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="menu">
+           <p><i class="fa-solid fa-bars"></i></p> 
+           <h3>Standard</h3>
+           <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+        </div>
+        <input type="text" placeholder="0" id="display" readonly>
+        <div class="disop">
+            <p class="operator-dis" id="deactive">MC</p>
+            <p class="operator-dis" id="deactive">MR</p>
+            <p class="operator-dis">M+</p>
+            <p class="operator-dis">M-</p>
+            <p class="operator-dis">MS</p>
+        </div>
+        <div>
+            <button onclick="appendNumber('%')" class="operator">%</button>
+            <button class="operator">CE</button>
+            <button onclick="clearDisplay()" class="operator">C</button>
+            <button class="operator"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+        <div>
+            <button onclick="appendNumber('1/x')" class="operator ac"><sup>1</sup>/x</button>
+            <button onclick="appendNumber('x²')" class="operator del">x<sup>2</sup></button>
+            <button onclick="appendNumber('√x')" class="operator"><sup>2</sup>√x</button>
+            <button onclick="appendOperator('/')" class="operator"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('*')" class="operator"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')" class="operator"><i class="fa-solid fa-window-minimize"></i></button>
+        </div>
+        <div>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('+')" class="operator"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div>
+            <button><sup>+</sup>/-</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculate()" class="operator" id="equal"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
