@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #201e1e;
+}
+.Calculator{
+    border: 1px solid rgb(65, 65, 64);
+    height: 99vh;
+    width: 32vw;
+    text-align: center;
+    background-color: #201e1e;
+    color: #fff;
+    padding: 5px;
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.calc-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    font-size: 12px;
+    display: flex;
+    gap: 1rem;
+}
+.disop {
+    font-family: "Moon Dance", serif;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 29vw;
+    padding: 1vw;
+    font-weight: bold;
+}
+#deactive{
+    opacity: 0.2;
+}
+.operator{
+    font-family: "Moon Dance", serif;
+    background-color: black;
+    color: #fff;
+    opacity: 0.5;
+    font-size: 1.4vw;
+    border: none;
+
+}
+#equal{
+    background-color: rgb(13, 144, 231);
+}
+.menu{
+    display: flex;
+    gap: 2vw;
+    padding: 1rem;
+    
+}
+input{
+    background-color: #201e1e44;
+    width: 100%;
+    height: 14vh;
+    font-size: 3.5vw;
+    border: none;
+    text-align: end;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+button{
+    font-size: 1.4vw;
+    height: 10.4vh;
+    width: 7.5vw;
+    background-color: black;
+    color: #fff;
+    border: none;
+    
+}
+button:hover{
+    background-color: rgb(42, 41, 41);
+}
+
+@media  screen and (max-width: 1170px) {
+    .Calculator{
+        width: 45vw;
+    }
+    .menu{
+        margin-left: 70px;
+    }    
+    .disop {
+        font-family: "Moon Dance", serif;
+        font-size: 1vw;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+        
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .Calculator{
+        width: 100vw;
+
+    }
+    .disop {
+        font-family: "Moon Dance", serif;
+        font-size: 3vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    button{
+        width: 23%;
+        font-size: 5vw;
+    }
+    .operator{
+        font-size: 5vw;
+    }
+    input{
+        font-size: 12vw;
+    }
+    .menu{
+        justify-content: space-around;
+        
+    }
+}
