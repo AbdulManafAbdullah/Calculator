@@ -134,3 +134,32 @@ button:hover{
         
     }
 }
+@media  screen and (max-width: 400px) {
+    .Calculator{
+        width: 100vw;
+
+    }
+    .disop {
+        font-family: "Moon Dance", serif;
+        font-size: 3vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    button{
+        width: 23%;
+        font-size: 5vw;
+    }
+    .operator{
+        font-size: 5vw;
+    }
+    input{
+        font-size: 12vw;
+    }
+    .menu{
+        justify-content: space-around;
+        
+    }
+}
