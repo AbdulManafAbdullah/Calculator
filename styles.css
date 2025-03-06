@@ -105,32 +105,34 @@ button:hover{
     }
 }
 
-@media  screen and (max-width: 300px) {
+@media  screen and (max-width: 640px) {
     .Calculator{
-        width: 100vw;
-
+        width: 100%;
     }
     .disop {
         font-family: "Moon Dance", serif;
-        font-size: 3vw;
+        font-size: 2vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
+        width: 100%;
         
     }
     button{
         width: 23%;
-        font-size: 5vw;
+        font-size: 3vw;
+        height: 12vh;
     }
     .operator{
-        font-size: 5vw;
+        font-size: 2vw;
     }
     input{
-        font-size: 12vw;
+        font-size: 9vw;
     }
     .menu{
-        justify-content: space-around;
+        justify-content: start;
+        gap: 12vw;
         
     }
 }
@@ -159,7 +161,36 @@ button:hover{
         font-size: 12vw;
     }
     .menu{
+        justify-content:start;
+        
+    }
+}
+@media  screen and (max-width: 260px) {
+    .Calculator{
+        width: 100vw;
+
+    }
+    .disop {
+        font-family: "Moon Dance", serif;
+        font-size: 3vw;
+        display: flex;
         justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    button{
+        width: 23%;
+        font-size: 4vw;
+    }
+    .operator{
+        font-size: 3vw;
+    }
+    input{
+        font-size: 12vw;
+    }
+    .menu{
+        font-size: 4vw;
         
     }
 }
